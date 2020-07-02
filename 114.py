@@ -4,14 +4,14 @@ file = list(csv.reader(open('111 Books.csv')))
 start = int(input('Enter a start year: '))
 end = int(input('Enter a start year: '))
 
-tem = []
+tmp = []
 for row in file:
-    tem.append(row)
+    tmp.append(row)
 count = 0
 x = 0
-for row in tem:
-    if int(tem[x][2]) >= start and int(tem[x][2]) <= end:
-        print(tem[x])
+for row in tmp:
+    if start <= int(tmp[x][2]) <= end:
+        print(tmp[x])
         count = count + 1
     x = x + 1
 if count == 0:

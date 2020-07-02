@@ -2,12 +2,12 @@ import csv
 
 file = list(csv.reader(open('111 Books.csv')))
 
-tem = []
+tmp = []
 for row in file:
-    tem.append(row)
+    tmp.append(row)
 count = 0
 x = 0
-for row in tem:
+for row in tmp:
     print(x, row)
     x = x + 1
 input("\nPress enter to continue")
